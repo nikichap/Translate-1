@@ -69,7 +69,7 @@ void CDlgWriteConfig::OnBnClickedButton4()
 
 	if (csSaveDir == "")
 	{
-		MessageBox(_T("Please, select the directory"), _T("Warning"), MB_ICONEXCLAMATION);
+		MessageBox(_T("Please, select the directory!"), _T("Warning"), MB_ICONEXCLAMATION);
 		return;
 	}
 
@@ -78,7 +78,7 @@ void CDlgWriteConfig::OnBnClickedButton4()
 
 	if (FileName == "")
 	{
-		MessageBox(_T("Please, write the file name"), _T("Warning"), MB_ICONEXCLAMATION);
+		MessageBox(_T("Please, write the file name!"), _T("Warning"), MB_ICONEXCLAMATION);
 		return;
 	}
 	else
@@ -95,7 +95,7 @@ void CDlgWriteConfig::OnBnClickedButton4()
 	{
 		if (!file.Open(csSaveDir + "\\" + FileName + ".txt", CStdioFile::modeReadWrite | CStdioFile::modeCreate | CFile::shareDenyNone))
 		{
-			MessageBox(_T("Can not open the congig file"), _T("Warning"), MB_ICONEXCLAMATION);
+			MessageBox(_T("Can not open the congig file!"), _T("Warning"), MB_ICONEXCLAMATION);
 		}
 		else
 		{
