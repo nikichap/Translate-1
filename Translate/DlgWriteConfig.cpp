@@ -48,7 +48,7 @@ void CDlgWriteConfig::OnBnClickedButton1()
 {
 	// TODO: Add your control notification handler code here
 	CString csLoadFile;
-	m_ebLoadFile.GetWindowTextA(csLoadFile);
+	m_ebLoadFile.GetWindowText(csLoadFile);
 	if (csLoadFile != "")
 	{
 		theApp.m_csConfig = csLoadFile;
@@ -65,7 +65,7 @@ void CDlgWriteConfig::OnBnClickedButton4()
 {
 	// TODO: Add your control notification handler code here
 	CString csSaveDir;
-	m_ebSaveDir.GetWindowTextA(csSaveDir);
+	m_ebSaveDir.GetWindowText(csSaveDir);
 
 	if (csSaveDir == "")
 	{
@@ -74,7 +74,7 @@ void CDlgWriteConfig::OnBnClickedButton4()
 	}
 
 	CString FileName;
-	m_ebFileName.GetWindowTextA(FileName);
+	m_ebFileName.GetWindowText(FileName);
 
 	if (FileName == "")
 	{
@@ -122,7 +122,7 @@ void CDlgWriteConfig::OnBnClickedButton2()
 	CStdioFile file;
 	CString csLine;
 
-	m_ebLoadFile.GetWindowTextA(csLoadFile);
+	m_ebLoadFile.GetWindowText(csLoadFile);
 	
 	if (csLoadFile == "")
 	{
@@ -145,8 +145,8 @@ void CDlgWriteConfig::OnBnClickedButton2()
 			fileName = fileName.Left(i);
 
 		
-		m_ebFileName.SetWindowTextA(fileName);
-		m_ebSaveDir.SetWindowTextA(pathName);
+		m_ebFileName.SetWindowText(fileName);
+		m_ebSaveDir.SetWindowText(pathName);
 
 		//remove old words
 		for (int i = m_lbWords.GetCount()-1; i> 0; i--)

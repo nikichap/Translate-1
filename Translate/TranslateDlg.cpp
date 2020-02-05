@@ -164,7 +164,7 @@ void CTranslateDlg::IncorectCount(int* count, bool flag)
 
 	CString cs_MyStr;
 	cs_MyStr.Format(_T("%d"), *count);
-	cs_MyStr += _T(" непознати думи");
+	cs_MyStr += _T(" words");
 	m_edit_count.SetWindowText(cs_MyStr);
 }
 
