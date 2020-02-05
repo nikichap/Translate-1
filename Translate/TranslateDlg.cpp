@@ -348,6 +348,8 @@ void CTranslateDlg::OnWriteaconfigfileWriteaconfigfile()
 	CDlgWriteConfig dlgConfigFile;
 	dlgConfigFile.DoModal();
 
+	//test changes
+
 	if (theApp.m_csConfig != "")
 	{
 		if (!file.Open(theApp.m_csConfig, CStdioFile::modeRead | CFile::shareDenyNone))
