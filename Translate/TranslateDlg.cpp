@@ -328,6 +328,8 @@ void CTranslateDlg::OnBnClickedButton3()
 	{
 		arrCorect[i] = false;
 	}
+
+	//Maria Stoynova
 }
 
 
